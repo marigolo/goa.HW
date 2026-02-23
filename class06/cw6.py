@@ -1,17 +1,16 @@
 
-
-# name = input("what is your name?")
-# last_name = input("whats your last name?")
-# print(f"hello wlcome {name} {last_name}" \n )
-
-
-# name = input("what is your name?")
-# last_name = input("whats your last name?")
-# full_name = name + last_name
-# print("hello wlcome", name, last_name, sep="\n")
+num1 = int(input("enter number "))
+num2 = int(input("enter 2nd number "))
+print(num1 + num2)
+print(num1 - num2)
+print(num1 / num2)
+print(num1 // num2)
+print(num1 ** num2)
+print(num1 % num2)
 
 
 
-x = int(input("enteryour score" ))
-if 20 < x < 90:
-   print("A")
+
+#2) გამოიტანს True რადგან True არის 1 და False არის 0 ამიტომ 1-0+0 =1ბოლოს ვიღებთ 1-ს
+
+#3) int()-გადაყავს str int  სტრ() გადაყავს ნებისმიერი სტრინგად flote()გადაყავს ფლოუტად bool() gadayavs boolianad
