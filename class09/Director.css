@@ -1,0 +1,89 @@
+body{
+   margin: 0;
+   padding: 0; 
+   background-color: #342568e5;
+}
+
+h1 {
+   color: rgb(255, 6, 6);
+   text-align: center;
+   text-shadow: 8px 7px 4px yellow;
+   font-size: 10em;
+   margin: 0;
+}
+
+.bg_img img {
+   height: 100%;
+   width: 100%;
+}
+
+button a {
+   text-decoration: none;
+   color: rgb(255, 0, 0);
+   text-align: center;
+   }
+
+button {
+   border-radius: 6px;
+   border: 2px solid rgb(243, 7, 7);
+   padding: 6px;
+   width: 100px;
+   background-color: #91ff00;
+   margin: 20px 40px 10px 0;
+}
+
+.nav {
+   text-align: center;
+}
+
+
+
+h2 { 
+  margin: 20px 0 0 60px;
+   color: rgb(200, 255, 0);
+   font-size: 3em;
+}
+
+p, h5 {
+   margin: 0 0 20px 15px;
+   color: rgb(251, 255, 0);
+   font-size: 17px;
+   border:  2px solid red;
+   padding: 5px;
+   background-color: #36545c;
+}
+
+p:hover {
+   background-color: #5c2828;
+   font-size: 20px;
+}
+
+
+ footer {
+   background: #9b8a2a;
+   background: linear-gradient(357deg, rgba(155, 138, 42, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+   padding: 0 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+   border-radius: 5px;
+}
+
+
+footer  button , h5 {
+   width: auto;
+   margin: 15px 0;
+
+}
+
+footer button {
+   margin-right: 25px;
+}
+
+
+footer h5:hover {
+ font-size: 17px;
+ cursor: pointer;
+
+}
