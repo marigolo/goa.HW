@@ -1,12 +1,12 @@
-body  {
-   background-color: rgba(128, 128, 128, 0.801);
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+body {
+  background-color: rgba(128, 128, 128, 0.801);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.list1 ,.list2 {
-   color: rgb(255, 196, 0);
-   justify-content: center;
+.list1,
+.list2 {
+  color: rgb(255, 196, 0);
+  justify-content: center;
 }
-

@@ -1,168 +1,160 @@
-
-
 body {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   background-color: rgb(175, 187, 147);
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(175, 187, 147);
 }
-
 
 /* Home page */
 
 h1 {
-   text-align: center;
-   color: rgb(184, 18, 18);
-   font-size: 70px;
-   text-shadow: 7px 4px 2px rgb(179, 255, 0);
-   font-family: "Sofia", sans-serif;
-   font-size: 50px;
+  text-align: center;
+  color: rgb(184, 18, 18);
+  font-size: 70px;
+  text-shadow: 7px 4px 2px rgb(179, 255, 0);
+  font-family: "Sofia", sans-serif;
+  font-size: 50px;
 }
 
 .main-link button {
-   margin-left: 30px;
-   background-color: aquamarine;
-   width: 120px;
-   height: 30px;
-   border-radius: 10px;
+  margin-left: 30px;
+  background-color: aquamarine;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .main-link button:hover {
-   background-color: #59dd7a;
+  background-color: #59dd7a;
 }
 
 .main-link {
-   text-align: center;
-   align-items: center;
-   margin: auto;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 .main-link a {
-   text-decoration: none;
-   color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .main-link a:hover {
-   color: #f54545;
+  color: #f54545;
 }
 
 .main-img img {
-   height: 55vh;
-   width: 100%;
-   margin-bottom: 30px;
+  height: 55vh;
+  width: 100%;
+  margin-bottom: 30px;
 }
-
 
 /* products page */
 
 h2 {
-   font-size: 50px;
-   text-align: center;
-   color: rgb(54, 5, 32);
+  font-size: 50px;
+  text-align: center;
+  color: rgb(54, 5, 32);
 }
 
 .cards {
-   min-width: 100%;
-   min-height: auto;
-   margin-bottom: 100px;
-   display: flex;
-   justify-content: center;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
+  min-width: 100%;
+  min-height: auto;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .cards .card {
-   height: 190px;
-   margin-top: 50px;
-   max-width: 100%;
+  height: 190px;
+  margin-top: 50px;
+  max-width: 100%;
 }
 
 .cards .card img {
-   display: block;
-   height: 150px;
-   width: 200px;
+  display: block;
+  height: 150px;
+  width: 200px;
 }
 
 .cards .card button {
-   display: block;
-   min-height: 30px;
-   width: 140px;
-   background-color: #bcf5ba;
-   cursor: pointer;
-   margin-top: 5px;
-   border-style: none;
-   border-radius: 10px;
+  display: block;
+  min-height: 30px;
+  width: 140px;
+  background-color: #bcf5ba;
+  cursor: pointer;
+  margin-top: 5px;
+  border-style: none;
+  border-radius: 10px;
 }
 
 .cards .card button:hover {
-   border-style: solid;
-   font-size: 16px;
-   border-radius: 14px;
-   border: 2px solid black;
-   padding: 5px;
+  border-style: solid;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 2px solid black;
+  padding: 5px;
 }
-
-
 
 /* about us page */
 
 p {
-   color: rgb(82, 67, 146);
-   font-size: 20px;
-   margin: 30px;
-   background-color: rgb(132, 158, 120);
+  color: rgb(82, 67, 146);
+  font-size: 20px;
+  margin: 30px;
+  background-color: rgb(132, 158, 120);
 }
 
 h3 {
-   color: brown;
-   margin: 30px;
+  color: brown;
+  margin: 30px;
 }
 
 pre {
-   color: rgb(9, 14, 34);
-   font-size: 16px;
+  color: rgb(9, 14, 34);
+  font-size: 16px;
 }
-
 
 /* contact */
 
 .phone {
-   color: black;
-   cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 .phone:hover {
-   color: #00177c
+  color: #00177c;
 }
 
 .email {
-   color: black;
-   cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 .email:hover {
-   color: #00177c;
+  color: #00177c;
 }
 
 h3 div {
-   display: inline;
+  display: inline;
 }
 
 .main__map {
-   width: 100%;
+  width: 100%;
 }
 
 .main__map img {
-   width: 100%;
-   height: 300px;
-   margin: 50px;
+  width: 100%;
+  height: 300px;
+  margin: 50px;
 }
 
 .main__map {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
 }
