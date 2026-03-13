@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">name:</label>
+      <input type="text" placeholder="enter your name" required id="name" />
+      <br /><br />
+      <label for="lname">last name:</label>
+      <input
+        type="text"
+        placeholder="enter your lastname"
+        required
+        id="lname"
+      />
+      <br /><br />
+      <label for="email">email:</label>
+      <input type="email" id="email" placeholder="email" required />
+      <br /><br />
+      <label for="pass">password</label>
+      <input type="password" id="pass" required placeholder="enter password" />
+      <br /><br />
+      <label>choose gender</label>
+      <select name="gander">
+        <option id="gender">chooseyour gender</option>
+        <option value="f">female</option>
+        <option value="m">male</option>
+        <option value="o">other</option>
+      </select>
+      <br /><br />
+      
+      <input type="radio" id="huey" name="p" value="huey" checked />
+      <label for="huey">Huey</label>
+      <input type="radio" id="m" name="p" value="m" />
+      <label for="m">male</label>
+      <input type="radio" id="o" name="p" value="o" />
+      <label for="o">other</label>
+      <br /><br />
+
+      <input type="checkbox" name="f" id="fe"/>
+      <label for="fe">female</label>
+
+      <input type="checkbox" name="m" id="ma" />
+      <label for="ma">male</label>
+
+      <input type="checkbox" name="o" id="ot"/>
+      <label for="ot">other</label>
+      
+      <button type="submit">submit</button>
+
+    </form>
+  </body>
+</html>

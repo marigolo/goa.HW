@@ -1,0 +1,77 @@
+<!--
+ <from> -საჭიროა სტრუქტურისთვის
+<input>-ვიყენბთ იმფორმაციის შემოსატანად
+<leble> -ვიყენებთ input-ის დასასათაურებლად
+<select>-ვიყეnrbt drop down meniu შესაქმნელად
+<option>-ვიყენებთ Drop Down მენიუში არგუმენტების შესატანად
+<texarea>-ვიყენეთ მაშინ როცა გვინდა დიდი ტექსტი შემოვატანინოთ მომხმარებელს
+name-მონაცემის დასასათაურებლად მონაცემთა ბაზაში
+value-ვიყენებთ მონაცემისთვის ღირეულეის მისანიჭებლად
+for-ვიყენებთ leble-ის დასაკავშირელად input-თან
+id-ვიყენებთ input-ის დასაკავშირელად leble-თან
+placeholder-ვიყენებთ მომხმარებლისთვის მაგალითის საჩვენელად
+repuaierd-ვიყენებთ როცა აუცილებელია input-ის შევსეა
+
+  
+Name ატრიბუტი
+იგი გამოიყენება იმიტომ რომ როცა input-ში ჩაწერილ ინფორმაციას გადავგზავნით database-ში  იქ კი input-ის დასაჯგუფებლად აუცილებელია name ატრიბუტი
+
+
+Value ატრიბუტი
+იგი გამოიყენება ველის(input-ის) მნიშველობის განსასაზღვრად database-ში
+
+
+Form-sabmiting
+არის პროცესი როდესაც  formში შეყვანილი ინფორმაცია  იგზავნება database-ში სერვერზე 
+1) ივსება  ყოველი ველი 
+2) ვაგზავნით ინფორმაციას sabmitღილაკის დაჭერით 
+3) შემდეგ იგი ნაწილდება database-ზე  name და value ატრიბუტის დახმარებით
+  -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./Survey_.Form.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Survey Form</h1>
+      <form>
+        <label for="fname">Name:</label><br />
+        <input type="text" id="fname" name="Name" required /><br /><br />
+
+        <label for="Age">Age:</label><br />
+        <input type="number" id="Age" name="Age" value="18" min="18" max="99" required/><br/><br/>
+
+        <label>Favorite type of Sport</label><br />
+
+        <input type="radio" id="Sports1" name="Sport" value="Sport_indoor" />
+        <label for="Sports1">Indoor</label><br />
+
+        <input type="radio" id="Sports2" name="Sport" value="Sport_outdoor" />
+        <label for="Sports2">Outdoor</label><br />
+
+        <input type="radio" id="Sports3" name="Sport" value="Sport_both" />
+        <label for="Sports3">Both</label><br />
+
+        <label for="fvsport1">Favorite sport to watch:</label><br />
+        <input type="text" id="fvsport1" name="fvsport1" required /><br />
+
+        <label for="fvsport">Favorite sport to play:</label><br />
+        <input type="text" id="fvsport" name="fvsport" required /><br />
+
+        <label for="spoty_person">Favorite Sports-person:</label><br />
+        <input type="text" id="spoty_person" name="Sport_person" required/><br />
+
+        <label>Your Thougths on sport (opinions):</label
+        ><br />
+        <textarea name="thought" id="thought" required></textarea>
+        <input type="submit" id="button" name="submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./Basic_form.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="heading">
+        <h1>Basic HTML Form</h1>
+      </div>
+      <form>
+        <div class="name">
+          <label for="fname"> First Name</label><br />
+          <input type="text" id="fname" name="Name" required /><br /><br />
+
+          <label for="Lname">Last Name</label><br />
+          <input type="text" id="Lname" name="Lname" required /><br /><br />
+        </div>
+        <div class="other">
+          <label>Choose a drink</label><br />
+
+          <input type="radio" id="Coffee" name="Drink" value="Coffee" />
+          <label for="Coffee">Coffee</label><br />
+
+          <input type="radio" id="Tea" name="Drink" value="Tea" />
+          <label for="Tea">Tea</label> <br />
+
+          <input type="radio" id="Hot_chocolet" name="Drink" value="Hot chocolet"/>
+          <label for="Hot_chocolet">Hot chocolet</label><br />
+
+          <br />
+
+          <label>What icecream do you like?:</label><br />
+
+          <input type="checkbox" id="icecream_C" name="Icecream" />
+          <label for="icecream_C">chocolate</label> <br />
+
+          <input type="checkbox" id="icecream_CP" name="Chocolate_p" />
+          <label for="icecream_CP">Chocolate Pudding</label><br />
+
+          <input type="checkbox" id="icecream_CPB" name="Icecream_CPB" />
+          <label for="icecream_CPB">Chocolate Peanut Butter</label><br />
+
+          <input type="checkbox" id="icecream_V" name="Icecream_V" />
+          <label for="icecream_V">Vanilla</label><br />
+
+          <input type="checkbox" id="icecream_S" name="Icecream_S" />
+          <label for="icecream_S">Strawberry</label> <br /><br />
+
+          <label for="School">Selec a school:</label><br />
+          <select name="School" id="School">
+            <option value="H">Harvard</option>
+            <option value="C">cambridge</option>
+            <option value="O">oxford</option>
+          </select>
+          <br /><br />
+
+          <label>Please provide your comments:</label>
+          <br />
+          <textarea name="thought" id="thought" required></textarea>
+          <br />
+          <br />
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>

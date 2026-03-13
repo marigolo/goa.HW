@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplication Form</title>
+  </head>
+  <body>
+    <h1>Aplication Form</h1>
+    <form>
+      <label for="Fname">First Name:</label>
+      <input type="text" id="Fname" name="name" required />
+
+      <label for="Lname">Last Name:</label>
+      <input type="text" id="Lname" name="Lname" required /><br /> <br>
+
+      <label for="Bday">Date of Birth:</label>
+      <input type="date" id="Bday" name="Bday" required />
+
+      <label for="Age">Age:</label>
+      <input type="number" id="Age" name="Age" required /> <br /> <br>
+
+      <label for="Gender">Gender:</label>
+      <select name="Gender" id="Gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <option value="O">Other</option>
+      </select>
+
+      <label for="Eaddress">Email Address:</label>
+      <input
+        type="email"
+        id="Eaddress"
+        name="Eaddress"
+        placeholder="Enter Email address"
+        required
+      /><br /> <br>
+
+      <label>Position Available:</label>
+      <input type="radio" name="Developer" id="JD" />
+      <label for="JD">Junior Developer</label>
+
+      <input type="radio" name="Developer" id="M-lD" />
+      <label for="M-lD">Mid-level Developer</label>
+
+      <input type="radio" name="Developer" id="SD" />
+      <label for="SD">Senior Developer</label><br /> <br>    
+
+      <label>Programming Lenguages</label>
+
+      <input type="checkbox" name="Java" id="Java" />
+      <label for="Java">Java</label>
+
+      <input type="checkbox" name="JS" id="JS" />
+      <label for="JS">JavaScript</label>
+
+      <input type="checkbox" name="Python" id="Python" />
+      <label for="Python">Python</label><br /> <br>
+
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="pass" required />
+
+      <label for="Cpass">Confirm Password:</label>
+      <input type="password" id="Cpass" name="pass" required /> <br> <br>
+
+      <button type="submit">Submit</button>
+
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

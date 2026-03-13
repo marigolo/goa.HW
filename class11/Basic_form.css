@@ -1,0 +1,36 @@
+body {
+   display: flex;
+   justify-self: center;
+   align-self: center;
+   font-size: 18px;
+}
+
+h1 {
+   padding-left: 10px;
+   text-align: start;
+}
+
+
+.name {
+   margin-left: 10px;
+   border: 2px solid;
+   padding: 30px;
+   width: 400px;
+}
+
+
+.other {
+   margin-top: 10px;
+   margin-left: 10px;
+   border: 2px solid;
+   padding: 30px;
+   width: 400px;
+}
+
+
+button {
+   margin: 10px 0 0 10px;
+   border-radius: 5px;
+   border: 1px solid gray;
+   font-size: 13px;
+}
