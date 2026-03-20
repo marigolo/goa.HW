@@ -44,7 +44,7 @@ negative = 0
 zero = 0
 
 for i in range(10):
-    num = int(input("შეიყვანე რიცხვი: "))
+    num = int(input("enter: "))
 
     if num > 0:
         positive += 1
@@ -82,13 +82,21 @@ print(cities[2])
 print(cities[3])
 # 11) შექმენით რიცხვების სია დაპრინტე მხოლოდ ლუწი რიცხვები. 
 x = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8]
-print(x[1])
-print(x[3])
-print(x[5])
-print(x[7])
+for x in x:
+   if x % 2 == 0:
+      print(x)
+# print(x[1])
+# print(x[3])
+# print(x[5])
+# print(x[7])
 # 12) შექმენით რიცხვების სია და დაპრინტე მხოლოდ ლუწი რიცხვების ჯამი. 
 y = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8]
-print(y[1] + y[3] + y[5] + y[7])
+sum = 0
+for y in y:
+   if y % 2 == 0:
+      sum+=1
+   print(sum)
+
 # 13) შექმენით რიცხვების სია და დაპრინტეთ მხოლოდ ის რიცხვები რომელიც მეტია 6 ზე.
 z = [7 , 8 , 9 , 10 ]
 print(z[0] + z[1] + z[2] + z[3])
