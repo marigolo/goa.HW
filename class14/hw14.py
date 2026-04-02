@@ -1,4 +1,3 @@
-
 phrase = "Python Programming"
 print(phrase [:6])
 print(phrase[7:])

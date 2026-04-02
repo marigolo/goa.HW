@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<!-- 1) ჩამოწერეთ შემდეგი თეგების განმარტებები:
+    <!-- 1) ჩამოწერეთ შემდეგი თეგების განმარტებები:
 Section - ვიყენებთ საიტის სექციებად დასაყოფად
 Article -ვიყენებთ მთლიანი საიტის ან რამიმე კონკრეტული blog-ის მოსანიშნად
 Aside - ვიყენებთ საიტზე saidbar-ის დასამატებლად
@@ -20,32 +22,80 @@ backgroundcolor - ვიყენებთ ელემენიტის ფო
 font-size - ვიყენებთ ტექსტის ზომის შესაცვლელად
 tex-aline - ვიყენებთ ტექსტის განლაგების შესაცვლელად
 border - ვიტენებთ ელემენტის გარშემო border-ის გამოსაცენად -->
+<h1 style="text-align: center; color:rgb(43, 226, 64); border: 2px solid blue; font-size: 30px;">Hello</h1>
 
-<h5 style="text-align: center; color:rgb(43, 226, 64); border: 2px solid blue; font-size: 30px;">Hello</h5>
 
-<!--
-3) შექმენით საიტი თავისუფალ თემაზე. საიტზე დაამატეთ h1, h2, div თეგები, 
-სადაც გააერთიანებთ სექციებად დაყოფილ ინფორმაციებს ცალ-ცალკე. საიტზე იყოს მინიმუმ 5 ფოტო. 
-საიტზე მოცემული ტექსტი გადაიტანეთ ცენტრში. დამატებულ პარაგრაფებს მიანიჭეთ ლურჯი ფერი. ფოტოებს კი 
-გაუწერეთ border-ები (სასურველი ფერის) და მოუმრგვალეთ border-ის კუთხეები. ვებსაიტი დაყოფილი უნდა იყოს Header, main და 
-footer ნაწილებად. მაქსიმალურად დახვეწეთ და გასტილეთ მთლიანი საიყი.-->
-
-<header> 
-    <button style="background-color: black; border-radius: 5px"><a style="text-decoration: none;" href="#">clasical cloth</a></button>
-    <button style="background-color: black; border-radius: 5px"><a style="text-decoration: none;" href="#">practical cloth</a></button>
-    <button style="background-color: black; border-radius: 5px"><a style="text-decoration: none;" href="#">shose</a></button>
-</header>
-<main></main>
-<footer>
-    
-
-</footer>
 <!--
 4) შექმენით საიტი, სადაც დაამატებთ 5 ღილაკს, 7 პარაგრაფსა და 2 ფოტოს. ღილაკები, პარაგრაფები და ფოტოები ცალკე 3 დივში მოათავსეთ და გასტილეთ:
 • ღილაკებს ჰქონდეთ ლურჯი ტექსტის ფერი.
 • პარაგრაფები გაზარდეთ ზომაში და გადაიტანეთ ცენტრში.
 • ფოტოებს მოუმრგვალეთ ბორდერები.
+-->
+<style>
+    .butt {
+        display: flex;
+        justify-content: center;
+    }
 
-5) კომენტარის სახით ახსენით Inline CSS-ის სინტაქსი -->
+    .butt a{
+        color: blue;
+        text-decoration: none;
+    }
+
+    .butt button {
+        border: none;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .butt button:hover {
+        color: brown;
+        cursor: pointer;
+    }
+
+    .txt p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .pic {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .pic img {
+        border-radius: 20px;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+</style>
+<div class="butt">
+    <button><a href="#me">me</a></button>
+    <button><a href="#Hearmore">hear more</a></button>
+    <button><a href="#age">more</a></button>
+    <button><a href="#info">clike on me</a></button>
+    <button><a href="#abouthobyes">info</a></button>
+</div>
+
+<div class="txt">
+    <p id="me">Hello this is Mari here</p>
+    <p id="Hearmore">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione et quidem, nihil adipisci obcaecati odit beatae quas, voluptatum aspernatur</p>
+    <p id="age">i am 15 years old Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem harum quibusdam cumque voluptatum incidunt facilis mollitia fugiat vel, qui debitis dolorum cum odio optio distinctio magnam repellat, tempora assumenda.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam magni ea dolore, autem quam voluptas molestiae iure. Minus dolores repudiandae natus voluptas consectetur doloribus nobis itaque quisquam doloremque asperiores.</p>
+    <p id="info">my hobies are cooking ,playing volleyball</p>
+    <p id="abouthobyes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quidem iusto? Odio totam cum veritatis, optio soluta, ex doloribus dolorem at minima quam doloremque sapiente, porro nesciunt fugit maxime distinctio!</p>
+</div>
+
+<div class="pic">
+    <img src="https://i.pinimg.com/1200x/68/09/e3/6809e367127531df79431506a3aea05a.jpg" alt="night sky">
+    <img src="https://i.pinimg.com/1200x/34/b7/c3/34b7c3d9a679709b569b6209b025cc25.jpg" alt="moon">
+
+<!--
+5) კომენტარის სახით ახსენით Inline CSS-ის სინტაქსი 
+inlain CSS-ში ვიყენებთ styleა ტრინუტს მასში ვიყენებთვ property: value;
+-->
 </body>
+
 </html>

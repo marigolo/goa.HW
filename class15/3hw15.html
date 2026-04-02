@@ -1,0 +1,156 @@
+<!--
+3) შექმენით საიტი თავისუფალ თემაზე. საიტზე დაამატეთ h1, h2, div თეგები, 
+სადაც გააერთიანებთ სექციებად დაყოფილ ინფორმაციებს ცალ-ცალკე. საიტზე იყოს მინიმუმ 5 ფოტო. 
+საიტზე მოცემული ტექსტი გადაიტანეთ ცენტრში. დამატებულ პარაგრაფებს მიანიჭეთ ლურჯი ფერი. ფოტოებს კი 
+გაუწერეთ border-ები (სასურველი ფერის) და მოუმრგვალეთ border-ის კუთხეები. ვებსაიტი დაყოფილი უნდა იყოს Header, main და 
+footer ნაწილებად. მაქსიმალურად დახვეწეთ და გასტილეთ მთლიანი საიყი.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body {
+        background-color: grey;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    nav button {
+        width: 70px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #9d989c;
+    }
+
+    nav a {
+        text-decoration: none;
+        color:blue;
+    }
+
+    a:hover {
+        color: brown;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+
+    .moon , .sun , .stars{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        background-color: #555858;
+        width: 520px;
+        border-radius: 10px;
+
+    }
+
+
+    h1 {
+        margin: 0;
+    }
+
+    #Secound {
+        color: darkslateblue;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .moon img, .sun img, .stars img {
+        width: 500px;
+        height: 500px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    .moon p, .sun p, .stars p {
+        width: 500px;
+        color: blue;
+        margin-top: 0;
+        text-align: justify;
+    }
+
+    footer {
+        margin: 0;
+        background-color:darkslategray;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;       
+    }
+
+    footer p {
+        color: black;   
+        margin: 2px 0 2px 100px; 
+    }
+</style>
+
+ <header>
+    <nav>
+        <button><a href="#Moon">Moon</a></button>
+        <button><a href="#sun">Sun</a></button>
+        <button><a href="#stars">stars</a></button>
+    </nav>
+</header>
+<main>
+    <h1>This is a site about:</h1>
+    <h1 id="Secound">The moon, The sun and stars</h1>
+    
+    <div class="moon">
+        <h2 id="Moon">Moon</h2>
+        <p>The Moon is the only natural satellite of Earth. It orbits around Earth at an average distance of 384,399 kilometres a distance roughly 30 times the width of Earth. It completes an orbit (lunar month) in relation to Earth and the Sun (synodically) every 29.5 days.</p>
+        <img src="https://i.pinimg.com/736x/bb/b1/7e/bbb17e83cf1efb61ffc1174c5aa105c7.jpg" alt="moon1">
+        <h3>Lunar eclipse</h3>
+        <p>A lunar eclipse, also called a blood moon, is an astronomical event that occurs when the Moon orbits through Earth's shadow. Lunar eclipses occur during eclipse season, when the Moon's orbital plane is approximately in line with Earth and the Sun. The type and length of a lunar eclipse depend on the Moon's proximity to the lunar node.</p>
+        <img src="https://i.pinimg.com/736x/53/a5/4b/53a54b3764f24fa10879a619c4650b09.jpg" alt="red moon">
+    </div>
+
+    <div class="sun">
+        <h2 id="sun">Sun</h2>
+        <p>The Sun is the star located at the centre of the Solar System. It is a massive sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy from its surface mainly as visible light and infrared radiation with 10% at ultraviolet energies. It is the main source of energy for life on Earth. The Sun has been an object of veneration in many cultures and a central subject of astronomical research since antiquity.</p>
+        <img src="https://i.pinimg.com/1200x/7c/36/1f/7c361f251ff9647402e58a426b3ab27f.jpg" alt="sun">
+        <h3>Solar eclipse</h3>
+        <p>A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby obscuring the view of the Sun from a small part of Earth, totally or partially. Such an alignment occurs approximately every six months, during the eclipse season in its new moon phase, when the Moon's orbital plane is closest to the plane of Earth's orbit.[1] In a total eclipse, the disk of the Sun is fully obscured by the Moon. In partial and annular eclipses, only part of the Sun is obscured. Unlike a lunar eclipse, which may be viewed from anywhere on the night side of Earth, a solar eclipse can only be viewed from a relatively small area of the world. As such, although total solar eclipses occur somewhere on Earth every 18 months on average, they recur at any given place only once every 360 to 410 years.</p>
+        <img src="https://i.pinimg.com/1200x/a4/78/c8/a478c8504b197f4e6e6f740bf3f64375.jpg" alt="Solar eclipse">
+    </div>
+
+    <div class="stars">
+        <h2 id="stars">Stars</h2>
+        <p>A star is a luminous spheroid of plasma held together by self-gravity.[1] The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at night; their immense distances from Earth make them appear as fixed points of light. The most prominent stars have been categorised into constellations and asterisms, and many of the brightest stars have proper names. Astronomers have assembled star catalogues that identify the known stars and provide standardized stellar designations. The observable universe contains an estimated 1022 to 1024 stars. Only about 4,000 of these stars are visible to the naked eye—all within the Milky Way galaxy.</p>
+        <img src="https://i.pinimg.com/736x/3c/20/fd/3c20fd793552a04e7e860542eeba46a1.jpg" alt="Stars">
+    </div>
+
+</main>
+
+<footer>
+    <p>contact:</p>
+    <p>Phone:599 23 43 22</p>
+    <p>Email:MGG@</p>
+    <p>&copy; 2026 MG</p>
+</footer>
+
+<script>
+    alert("Hello to my web page");
+</script>
+</body>
+</html>
