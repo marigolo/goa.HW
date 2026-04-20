@@ -1,0 +1,21 @@
+/*  id 
+    class
+    element selector
+
+*/
+
+p {
+    color: green;
+    background-color: pink;
+}
+
+
+.p_1  {
+    color: rgb(35, 28, 166);
+    font-size: 40px;
+}
+
+h1 {
+    color: blue;
+    font-size: 20px;
+}
