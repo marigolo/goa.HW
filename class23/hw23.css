@@ -1,0 +1,152 @@
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: rgb(128, 0, 128);
+}
+
+h3 {
+    color: #800080;
+}
+
+.butt {
+    background-color: rgb(0, 255, 0);
+    border: 2px solid rgb(255, 165, 0);
+}
+
+.button {
+    background-color: #8B0000;
+    border: 1px double #0000FF;
+}
+
+#swan {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #8B0000;
+}
+
+#Lilies {
+    height: 150px;
+    width: 150px;
+    border: 3px dashed blue;
+}
+
+#candles {
+    height: 200px;
+    width: 200px;
+    border:4px dotted #800080;
+}
+
+#Crow {
+    height: 250px;
+    width: 250px; 
+    border: 2px double rgb(0, 255, 0);
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+#child {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.box {
+    background-color: purple;
+    height: 300px;
+    width: 300px;
+    font-size: 35px;
+}
+
+p {
+    font-size: 150%;
+}
+
+#first {
+    text-decoration:red  underline dotted;
+}
+
+#secound {
+    text-decoration: overline wavy blue;
+}
+
+#therd {
+    text-decoration: underline dashed;
+}
+
+#p_1 {
+    text-decoration: underline dotted;
+}
+
+#p_2 {
+    text-decoration: overline dashed;
+}
+
+#p_3 {
+    text-decoration: line-through wavy;
+}
+
+#p_4 {
+    text-decoration: underline  double;
+}
+
+#p_5 {
+    text-decoration: underline  solid;
+}
+
+#grearing {
+    text-decoration: underline;
+}
+
+#greet {
+    text-decoration: overline;
+}
+
+#txt {
+    text-decoration: blueviolet dashed line-through;
+} 
+
+em {
+    text-decoration:  wavy red underline;
+}
+
+strong {
+    text-decoration: double underline;
+}
+
+#paragraph {
+    text-decoration: dashed;
+}
+
+#small {
+    text-decoration: dotted;
+}
+
+#em {
+    text-decoration:line-through;
+}
+
+#italic {
+    text-decoration: double;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#First {
+    text-decoration: wavy;
+}
+
+#heading {
+    text-decoration: overline;
+}
+
+#heading_3 {
+    text-decoration: solid;
+}

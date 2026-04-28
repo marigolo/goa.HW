@@ -1,0 +1,53 @@
+#box h1{
+    color: blueviolet;
+}
+
+#box h2{
+    color: rgb(132, 112, 151);
+}
+
+#box h3{
+    color: #ff44ff;
+}
+
+
+#box2 {
+    background: #b45d5d;
+    width: 600px;
+    height: 200px;
+}
+
+#box-4 {
+     background: #745353;
+    width: 150px;
+}
+
+#box-5 {
+    background: #110782;
+    width: 50%;
+}
+
+#box-6 {
+    background: #02ff81;
+    width: 150px;
+}
+
+#ff {
+    text-shadow: 9px -7px #00ff80;
+}
+
+#i {
+    text-shadow: 5px -6px pink;
+}   
+
+#h {
+    text-decoration: solid  overline blue;
+}
+
+#h2 {
+    text-decoration: solid  overline rgb(255, 0, 115)
+}
+
+#h3{
+    text-decoration: solid  line-through blue;
+}

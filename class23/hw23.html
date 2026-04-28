@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hw23.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2) ახსენით თუ როგორ მუშაობს RGB Color მოდელი და HEX code-ები. მოიძიეთ ინფორმაცია ტექვსმეტობით სისტემაზე. -->
+    <!-- RGB მოდელი ფერს ქმნის სამი კომპონენტით: წითელი, მწვანე და ლურჯი 0–255 . მათი შერევით მიიღება სხვადასხვა ფერები.
+    HEX კოდი იგივე RGB-ის ჩანაწერია, მაგრამ თექვსმეტობით სისტემაში.
+    თექვსმეტობითი სისტემა (Hexadecimal, base-16) არის რიცხვითი სისტემა, რომელიც იყენებს 16 სიმბოლოს:
+
+    ციფრები:
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    და დამატებით:
+    A, B, C, D, E, F
+
+    სადაც:
+
+    A = 10
+    B = 11
+    C = 12
+    D = 13
+    E = 14
+    F = 15
+    -->
+    <!-- 3) საიტზე დაამატეთ 3 სხვადასხვა level-ის heading. სამივეს მიანიჭეთ იასამნისფერი ტექსტის ფერი, თუმცა პირველ Heading-ს 
+    ამ ფერის მნიშვნელობა სიტყვიერად გაუწერეთ, მეორე Heading-ს rgb-ის გამოყენებით და მესამე Heading-ისთვის 
+    იისფერის მისანიჭებლად HEX code გამოიყენეთ. 
+    Rgb და HEX code-ებზე თქვენ თვითონ გატესტეთ შესაძლო მნიშვნელობები, 
+    რათა მიიღოთ იასამნისფერი, ასე უკეთ ჩაწვდებით ორივე კოდის გამოყენების ტექნიკას.
+    -->
+
+    <h1>Hello</h1>
+    <h2>Hi</h2>
+    <h3>Hello</h3>
+
+<!-- 4) საიტზე დაამატეთ 5 ღილაკი. 
+
+    • პირველ 3 ღილაკს მიანიჭეთ მწვანე უკანა ფონი და 2px solid ნარინჯისფერი ბორდერი. (გამოიყენეთ Rgb)
+    • დანარჩენ 2 ღილაკს კი მიეცით მუქი წითელი ფერის უკანა ფონი და ლურჯი ფერის 1px double ბორდერი. (გამოიყენეთ HEX code)
+ -->
+    <button class="butt">click</button>
+    <button class="butt">click</button>
+    <button class="butt">click</button>
+    <button class="button">click</button>
+    <button class="button">click</button>
+
+
+<!-- 5) საიტზე დაამატეთ 4 ფოტო. თითოეულს მიანიჭეთ განსხვავებული Id და გასტილეთ ინდივიდუალურად:
+
+    •    პირველი ფოტო: ზომა: 100x100, მუქი წითელი ფერის 2px solid ბორდერი.
+    •    მეორე ფოტო: 150x150 ზომით, ლურჯი ფერის 3px dashed ბორდერი.
+    •    მესამე ფოტო: ზომით 200x200,  იისფერი ფერის 4px dotted ბორდერი
+    •    მეოთხე ფოტო კი: ზომაში იყოს 250x250, ბორდერი კი მწვანე ფერის 2px double სტილის ჰქონდეს.
+ -->
+    <img src="https://i.pinimg.com/736x/90/96/f6/9096f61ab92576ec4971b2ec00a9437c.jpg" alt="swan" id="swan">
+    <img src="https://i.pinimg.com/736x/b8/c4/36/b8c4366b1c87c877d0ef6ed128a14b12.jpg" alt="Lilies" id="Lilies">
+    <img src="https://i.pinimg.com/736x/03/7e/ba/037ebae82800055d5d3632682f11e80c.jpg" alt="candles" id="candles">
+    <img src="https://i.pinimg.com/736x/1e/e9/ef/1ee9ef34e465e8ebe53d2eb651f122b4.jpg" alt="Crow" id="Crow">
+
+<!-- 6) კომენტარების სახით ახსენით რა განსხვავებაა ფიქსირებულ ზომებსა (px) და პროცენტულ ზომებს (%-ში) შორის, რომლის გამოყენებას მიანიჭებდიყ უპირატესობას და რატომ. -->
+<!-- px ფიქსირებული მნიშვნელობაა — არ იცვლება ეკრანის ზომის მიხედვით
+     % დამოკიდებულია მშობელი ელემენტის ზომაზე
+-->
+<!-- 
+7) შექმენით <div> ელემენტი, რომელსაც უნიკალურ სახელწოდებად "container"-ს გაუწერთ. მას გაუწერეთ ლურჯი ფონი და ზომა ჰქონდეს 200x200.   -->
+<!-- 8) ამ კონტეინერის შიგნით ჩასვით კიდევ ერთი <div> სახელად "child" (მიანიჭეთ წითელი ფერი), რომელსაც სიგანედ და სიმაღლედ გაუწერთ 50%. კომენტარის სახით ახსენით, როგორ შეეცვლება “child”-ს ზომა და ასევე ახსენით რის მიხედვით ითვლება ზომები, როდესაც პროცენტებთან ვმუშაობთ. -->
+
+  <div id="container">
+    <div id="child"></div>
+  </div>
+  <!-- child ელემენტის ზომა დამოკიდებულია container-ზე
+    რადგან width და height მითითებულია 50%-ით, ეს ნიშნავს რომ child იქნება 
+    მშობლის სიგანისა და სიმაღლის ნახევარი. -->
+    
+<!--
+9) შექმენით იასამნისფერი Div ელემენტი და გაუწერეთ ზომა 300x300. Font-size მიანიჭეთ 35px. მასში ჩააშენეთ პარაგრაფი და გადააწერეთ მას ფონტის ზომა პროცენტებით (150%). კომენტარების სახით ახსენით შედეგი. -->
+<div class="box">
+    <p>m earum inventore quis quia. Distinctio, unde.</p>
+</div>
+<!-- პარაგრაფის ფონტის ზომა არის მშობელი div-ის ზომის 150%
+    ანუ 35px * 1.5 = 52.5px -->
+
+
+<!-- 10) შექმენით სამი პარაგრაფი. პირველ პარაგრაფის ტექსტს ქვემოდან გაუსვით წითელი ფერის წერტილოვანი ხაზი, მეორე პარაგრაფს ზემოდან გაუსვით ტალღოვანი ლურჯი ფერის ხაზი და მესამე პარაგრაფის ტექსტს კი - default ფერის წყვეტილი ხაზი გადაუსვით.
+ -->
+<p id="first">helooooooooooooooooooooooooo</p>
+<p id="secound">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum? Nisi dignissimos eligendi non ratione quidem ducimus libero maiores possimus? Ullam nesciunt iusto quasi odio quidem sit perspiciatis, ipsa illo.</p>
+<p id="therd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem? Consectetur aliquam mollitia recusandae, rerum, numquam totam iusto fugit corporis officiis ullam harum fuga in fugiat expedita assumenda obcaecati dolore?</p>
+
+
+<!-- 11) შექმენით 5 პარაგრაფი, თითოეულს გაუკეთეთ განსხვავებული სტილის ხაზგასმა:
+•    პირველი: underline + dotted
+•    მეორე: overline + dashed
+•     მესამე: line-through + wavy
+•    მეოთხე: underline + double
+•    მეხუთე: underline + solid -->
+
+<p id="p_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe esse, ex iusto eius dolorum, quam explicabo distinctio ea voluptates deserunt architecto dolores recusandae aut. Voluptatem ipsam facere non maiores adipisci?</p>
+<p id="p_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, sequi illum mollitia fugit excepturi rem, minus reiciendis saepe perspiciatis</p>
+<p id="p_3">optio veniam minus eaque velit fugiat atque voluptatum rerum! Iure, blanditiis consequuntur?</p>
+<p id="p_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae nesciunt repudiandae vitae consequatur provident eum unde enim. Praesentium soluta autem officiis. Nihil amet qui explicabo ad rem iure dolores!</p>
+<p id="p_5">Lorem ionsequatur veniam ducimus, aspernatur illo perferendis dolorem hic sit repellat! Eos doloremque amet eligendi, sapiente neque ipsum.</p>
+
+<!-- 12) გამოიყენეთ text-decoration კუთვნილება სხვადასხვა ტექსტურ ელემენტზე:
+•    h1 – underline
+•    h2 – overline
+•    h3 – blueviolet dashed line-through
+•    em – wavy red underline
+•    strong – double underline
+ -->
+<h1 id="grearing">hi</h1>
+<h2 id="greet">hello</h2>
+<h3 id="txt">my name is mari</h3>
+<em>hello</em>
+<strong>Lorem ipsum  quaerat voluptate libero! Earum.</strong>
+
+<!-- 
+13) html-ის დოკუმენტში დაამატეთ div ელემენტი და გაუწერეთ კლასი container. div 
+ელემენტში ჩააშენეთ რამდენიმე განსხვავებული ტექსტური ელემენტი (p, em, strong, h1-h6) 
+და ყველას მიანიჭეთ ინდივიდუალური text-decoration-ის სტილი id-ების გამოყენებით. 
+(მაგ: წერტილოვანი, ტალღოვანი, ორმაგი და სხვ.) -->
+
+<div class="container">
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente est molestias et iure perferendis neque ipsum mollitia aperiam pariatur, illo eligendi fugit a. Similique, ipsa error dolorem laudantium expedita accusantium.</p>
+    <em id="italic">Hello</em>
+    <h1 id="First">this is biggest heading</h1>
+    <h2 id="heading">this is 2nd biggest heading</h2>
+    <h3 id="heading_3">this is 3th biggest heading</h3>
+    <h4 id="em">em is maiking texst italic</h4>
+    <h6 id="small">this is smallest heading</h6>
+    <a href="#" id="link">info</a>
+</div>
+
+</body>
+</html>
