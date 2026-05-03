@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Smooch+Sans:wght@100..900&display=swap');
+
+p {
+    font-family: "Smooch Sans", sans-serif;
+    color: green;
+    text-shadow: 3px 0 10px lightgreen;
+}
+
+
+a:hover {
+    text-shadow: 3px 0 10px lightgreen;
+}
+
+a:visited {
+    color: #ff00bb;
+}
+
+a:active {
+    color: green;
+}
+
+#first_h2:hover {
+    text-shadow: -2px 0px 20px;
+}
+
+#secound_h2:hover {
+    background-color: #622121;
+}
