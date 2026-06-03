@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95%;
+    background-color: #59b27c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diraction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.box, .box__row, .box__row__reverse, .box__column, .box__column__reverse{
+    border: 1px solid black;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#items1 {
+    flex-grow: 3;
+}
+
+#items {
+    flex-grow: 1;
+}
+
+.items {
+    flex-grow: 0;
+}
+
+/* 4) CSS_ის ფაილში კომენტარის სახით დეტალურად ახსენით, თუ რა დროს ვიყენებთ Flex-grow კუთვნილებას. */
+
+/* Flex-grow კუთვნილების დახმარებით ვაკონტროლებთ, ელემენტის გაიზარდას
+container-ში დარჩენილი თავისუფალი სივრცის მიხედვით. იგი არ იმუშავებს თუ მითითებული 
+აქვს ფიქსირებული ლიგრძე დეფაულტ მნიშვნელლობა არის 0 */
+
+/* 5) განმარტეთ რას ეწოდება Flex-shrink და როდის ვიყენებთ მას */
+
+/* Flex-shrink არის კუთვნილება,
+რომელიც განსაზღვრავს  რამდენად შემცირდეს
+ელემენტი მაშინ, როდესაც container-ში
+სივრცე საკმარისი აღარ არის დეფაულტი არის 1 */
+
+/* 6) კომენტარის სახით ახსენით რა დანიშნულება აქვს Flex-driection კუთვნილებას. მოიყვანეთ row, column, row-reverse და column-reverse მნიშვნელობების მაგალითები ცალ-ცალკე Html-ში.*/
+
+/* Flex-direction კუთვნილება გამოიყენება ელემენტების განლაგების მიმართულების განსაზღვრავსათვის
+ეს კუთვნილება მუშაობს მხოლოდ მაშინ როდესაც parent ელემენტს აქვს არის flex-ი  დეფაულტი არის row*/
+ 
+
+
+.box__row {
+    flex-direction: row;
+}
+
+.box__row__reverse {
+    flex-direction: row-reverse;
+}
+
+.box__column {
+    flex-direction: column;
+}
+
+.box__column__reverse {
+    flex-direction: column-reverse;
+}
+
+/* 7) ახსენით რას აკეთებს Flex-wrap და gap კუთვნილებები. */
+
+/* Flex-wrap კუთვნილება განსაზღვრავს გადავიდნენ თუ არა
+ელემენტები ახალ ხაზზე როდესაც container-ში ადგილი აღარ არის. */
+
+/*Gap კუთვნილება ქმნის დაშორებას flex-ელემენტებს შორის*/
+
+/* 8) a. */
+
+.numeration {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+}
+
+
+.main__box {
+    width: 500px;
+    background-color: #6B6561;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.main__child {
+    width: 250px;
+    height: 125px;
+    background-color: #72D5B6;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px;
+
+}
+
+.main__child p {
+    color: rgb(115, 110, 110);
+    font-size: 20px;
+}
+
+.main__child1 {
+    width: 250px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.child {
+    height: 60px;
+    flex-grow: 2;
+    background-color: #72D5B6;
+}
+
+.childs__cild {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    height: 60px;
+}
+
+.child1 {
+    background-color: #72D5B6;
+    flex-grow: 1;
+    height: 40px;
+}
+
+/* 8) b. */
+
+.flex { 
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.first_c, .secound_c, .thirth_c, .forth_c {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.child_1 {
+    border: 3px solid black;
+    height: 40px;
+    flex-grow: 1;
+    background-color: #99CF1C;
+}
+
+.child2 {
+    border: 3px solid black;
+    height: 40px;
+    flex-grow: 5;
+    background-color: #99CF1C;
+}
+
+.child3 {
+    border: 3px solid black;
+    height: 40px;
+    flex-grow: 2;
+    background-color: #99CF1C;
+}
+

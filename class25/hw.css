@@ -40,7 +40,7 @@
    ტექსტის ჩრდილის დამატება (ჰორიზონტალური, ვერტიკალური, blur, ფერი) */
 
 /* Pseudo-Selector 
-    იგივე ფსევდო-სელექტორი CSS-ში არის სპეციალური  სიტყვა, რომელიც გვაძლევს საშუალებას  ელემენტი კონკრეტული მდგომარეობას გავსტილოთ*/
+    იგივე ფსევდო-სელექტორი CSS-ში არის სპეციალური  სიტყვა, რომელიც გვაძლევს საშუალებას  ელემენტი კონკრეტული მდგომარეობისა გავსტილოთ*/
 
 /* :link 
      ლინკი, რომელიც ჯერ არ არის ნანახი */
@@ -126,31 +126,32 @@ footer {
 
 /* 3th */
 
-#nav_bar {
+#nav__bar {
     background-color: #f0f0f0;
-    padding: 15px;
+    padding-top: 20px;
+    height: 30px;
+
 }
 
-#nav_bar a {
+#nav__bar a {
     text-decoration: none; 
     color: red; 
-    margin-right: 20px;
     font-size: 18px;
     transition: 0.3s;
 }
 
-#nav_bar a:hover {
+#nav__bar a:hover {
     color: blue;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
-#nav_bar a:active {
+#nav__bar a:active {
     color: purple;
     font-size: 16px;
 }
 
-#nav_bar a:visited {
+#nav__bar a:visited {
     /* color: yellow; */
     font-weight: normal;
 }
