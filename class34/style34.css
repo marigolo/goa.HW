@@ -1,0 +1,24 @@
+
+.box {
+    background-color: #a84646;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+
+} 
+
+.pic {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: 230px;
+    bottom: 150px;
+}
+
+h1 {
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+
+}

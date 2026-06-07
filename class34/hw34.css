@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c8c2c2;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #1f4e79;
+    color: white;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#home {
+    height: 100vh;
+    background: linear-gradient(to right, #1f4e79, #4fa3d1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    font-size: 50px;
+}
+
+
+#places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;    
+}
+
+#places h2 {
+    margin-top: 30px;
+    color: rgb(25, 9, 9);
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 600px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+.cards img {
+    width: 300px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.last {
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    margin: 10px 20px;
+}
+
+.cards:hover {
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+#about {
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#about:hover {
+    box-shadow: 0 0 10px black;
+}
+
+#about h2 {
+    color: #1f4e79;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+.top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.top-btn:hover{
+    background-color: #163a5c;
+}
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
