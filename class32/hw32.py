@@ -13,7 +13,7 @@ fruit1 , fruit2 , *fruit3= fruits
  
 # 3)
 
-# შეგვიზლია გამოვიყენოთ: count(), len(), min(), max(), startswith(), endswith()
+# შეგვიზლია გამოვიყენოთ: count(), len(), min(), max()
 
 # 4)
 
@@ -33,4 +33,4 @@ num1 , *rest = num
 
 fruits = ('Apple', 'Pomegranate', 'Cherry', 'Strawberry', 'Blueberry')
 *fruit1, fruit2, fruit3 = fruits
-# არაფერს გამოიტანს რადგან არ შეიძლება Asterisk თავში გამოყენება რადგან ის ნიშნავს ყველა დანარCენ ელემენტს
+# ბოლო 2 ცვლადამდე მივა და შემდეგ შეჩერდება რადგან მისს შემდეგ 2 ცვლადია
