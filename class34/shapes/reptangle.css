@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.corner {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: black;
+}
+
+.tl {
+    top: 0;
+    left: 0;
+}
+
+.tr {
+    top: 0;
+    right: 0;
+}
+
+.bl {
+    bottom: 0;
+    left: 0;
+}
+
+.br {
+    bottom: 0;
+    right: 0;
+}
+
+.outer {
+    position: absolute;
+    inset: 0;
+    border-radius: 40%;
+    background: white;
+}
+
+.inner {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: black;
+    top: 40%;
+    left: 40%; 
+}
