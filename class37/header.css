@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #89d6d7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header1 {
+    width: 500px;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__element {
+    position: relative;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #89d6d7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.line2 {
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.line3 {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.header__element:hover .line1 {
+    transform: scaleX(1);
+}
+
+.header__element:hover .line2 {
+    transform: scaleX(1);    
+}
+
+.header__element:hover .line3 {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.header2 {
+    padding: 10px;
+    display: flex;
+    width: 500px;
+    height: 8  0px;
+    background: #676567; 
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3c383a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.main {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 15px;
+    height: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 2px solid;
+    background-color: black;
+    border-radius: 50%;
+    top: 2px;
+    left: 17px;
+}
+
+.yout {
+    width: 30px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triengle {
+    background-color: #3c383a;
+    height: 7px;
+    width: 7px;
+    border-radius: 5px 5px 25px;
+    transform: rotate(174deg);
+}
+
+.yout:hover {
+    background-color: red;
+    border: red solid 2px;
+}
+
+.main:hover, .child:hover, .dot:hover {
+    border: 2px solid  #D43165;
+}
+
+.facebook:hover, .in:hover {
+    box-shadow: 0 0 40px blue;
+}
+
+h2:hover {
+    text-shadow: 0 0 40px blue;
+    color:  rgb(0, 170, 255);
+}
+
+.twitter:hover {
+    box-shadow: 0 0 40px rgb(0, 170, 255);
+}
+
+.instagram:hover {
+    box-shadow: 0 0 40px #D43165;
+}
+
+.youtube:hover {
+    box-shadow: 0 0 40px red;
+}
+

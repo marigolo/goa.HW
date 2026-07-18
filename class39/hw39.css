@@ -1,0 +1,63 @@
+/*
+1)
+    რესპონსივი არის ვებ-დიზაინი
+    რომლის საშუალებითაც wabpag-ი ავტომატურად ერგება
+    სხვადასხვა ზომის ეკრანს  
+*/
+
+/* 
+2) 
+    @media საშუალებას გვაძლევს
+    განსხვავებული სტილები გამოვიყენოთ 
+    სხვადასხვა ზომის ეკრანზე
+*/
+
+/* 
+3)
+
+ა)
+    min-width - მუშაობს  როცა ეკრანის სიგანე 
+    მითითებულ მნიშვნელობაზე
+    ტოლი ან მეტია
+
+ბ)
+    max-width - მუშაობს როცა ეკრანის სიგანე 
+    მითითებულ მნიშვნელობაზე
+    ტოლი ან ნაკლებია.
+*/
+
+/* 4) */
+
+.boxes {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    background-color: #1fd79d;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        border-radius: 50%;
+        color: blueviolet;
+    }
+
+    .box:hover {
+        background-color: #0effb3;
+        cursor: pointer;
+        
+     }
+}

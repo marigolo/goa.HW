@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6e92a2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+/* aboout */
+.header1 {
+    width: 500px;
+    height: 60px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__element {
+    position: relative;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #89d6d7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.line2 {
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.line3 {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.header__element:hover .line1 {
+    transform: scaleX(1);
+}
+
+.header__element:hover .line2 {
+    transform: scaleX(1);    
+}
+
+.header__element:hover .line3 {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.main {
+    border-radius: 30px;
+    border: 2px solid red;
+    padding: 20px;
+    text-align: center;
+}
+
+.main:hover {
+    box-shadow: 0 0 30px red;
+}
+
+
+.lists {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__element {
+    text-align: center;
+}
+
+.lists {
+    border: 2px red solid;
+    box-shadow:  0 0 30px red;
+    padding: 30px;
+}
+
+.images {
+    margin: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+/* main */
+
+.goa {
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+}
+
+#info {
+    text-align: center;
+    text-shadow:  0 0 20px blue;
+    letter-spacing: 0.4;
+}
+
+img {
+    /* height: 500px; */
+    width: 600px;
+}
+
+button {
+    width: 300px;
+    height: 60px;
+    border-radius: 40px;
+    border: 1px solid red;
+    background-color: #775555;
+    box-shadow: 0 0 40px red;
+}
+
+/* galery */
+
+.pic-container {
+    width: 70vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imag {
+    width: 300px;
+    border-radius: 30px;
+    border: 2px solid blue;
+}

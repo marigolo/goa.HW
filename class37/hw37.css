@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #8fe188;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box1, .box2, .box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: transform 3s, background-color 3s;
+}
+
+.box1:active {
+    transform: translateX(-100px);
+    background-color: purple;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box2:active {
+    transform: translate(0, 200px);
+    transition: transform 1s background-color 2s;
+    transform: rotate(120deg);
+    background-color: orange;
+}
+
+.box3:active {
+    transform: scale(1.5);
+}
+
+.box3:hover {
+    transform: rotate(-190deg);
+}
+
+
+.spiner {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-self: center;
+    position: relative;
+}
+
+.spiner:hover {
+    transition: transform 0.8s;
+    transform: rotate(360deg);
+}
+
+.spin__rul1 {
+    border-radius: 20px;
+    width: 20px;
+    height: 40px;
+    background: rgb(169, 105, 105);
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transform-origin: 10px 40px;
+}
+.spin__rul2 { 
+    border-radius: 20px;
+    transform: rotate(120deg);
+    width: 20px;
+    height: 40px;
+    background: rgb(169, 105, 105);
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transform-origin: 10px 40px;
+}
+.spin__rul3 { 
+    border-radius: 20px;
+    width: 20px;
+    height: 40px;
+    background: rgb(169, 105, 105);
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transform-origin: 10px 40px;
+    transform: rotate(240deg); 
+}
+
+.dot {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dot1 {
+    left: 40%;
+    top: 10%;
+}
+
+.dot2 {
+    top: 56%;
+    left: 10%;
+}
+
+.dot3 {
+    top: 56%;
+    left: 66%;
+}
+
+.dot4 {
+    top: 40%;
+    left: 40%;
+}
+
+.spiner:hover {
+    animation: mari 0.4s linear infinite;
+} 
+
+@keyframes mari    {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.butt, .btn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    color: #206719;
+    display: block;
+    font-weight: 900;
+}
+
+.butt:active {
+    transform: scale(1.5);
+}
+
+.btn {
+    transition: transform 0.5s;
+}
+
+.btn1:hover {
+    transform: translate(-160px, -20px) scale(0.8);
+}
+
+.btn2:active {
+    transform: translate(60px, -45px) scale(1.3);
+}
+
+.cube{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(45deg,#00f7ff,#ff00ff);
+    border-radius: 20px;
+    transition: 1.2s;
+    cursor: pointer;
+}
+
+.cube:hover{
+    transform: rotateX(360deg) rotateY(360deg);
+    border-radius: 50%;
+    box-shadow: 0 0 50px cyan;
+}
+
+/* თუ ელემენტს transform: rotate(360deg)-ს გავუწერთ
+ ის  360°-ით შემობრუნდება და საბოლოოდ ისევ იმავე მდგომარეობაში აღმოჩნდება ~
+ თუმცა ამ ტრიალს ჩვენ თვალით ვერ დავინახავთ */

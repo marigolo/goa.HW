@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    /* background-image: url(https://i.pinimg.com/736x/2c/b5/be/2cb5be9e85220191209e176f3388c800.jpg);
+    background-repeat: no-repeat; */
+    /* background-size: cover; 
+    width -1 ; height -2 */
+    /* background-position: 100px 200px; 
+    x-1; y- 2 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box, .box2, .box3 {
+    width: 200px;
+    height: 200px;
+    background-color: #5316af;
+}
+
+.box:hover {
+    transform: translate(-100px , -200px);
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #5316af;
+}
+
+.box1:hover {
+    transform: scale(1.5);
+}
+
+.box2:hover {
+    transform: rotate(45deg);
+}
+
+.box3:hover {
+    transform: rotate(45deg);
+    transform-origin: top right;
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_secound {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-image: url(https://imgs.search.brave.com/Q2m4bgwSiwXZOkPbDAHLC782Jnhi1pDsYxyMK0xkaXE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNzEz/NDk4Ni9wZXhlbHMt/cGhvdG8tNzEzNDk4/Ni5qcGVnP2NzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.chiled1 {
+    width: 60%;
+    position: relative;
+}
+
+.paragraph1 {
+    z-index: 2;
+    position: absolute;
+    top: -50px;
+}
+
+.secound_p {
+    margin-top: 10px;
+    color: grey;
+    position: absolute;
+    bottom: -100px;
+}
+
+.secound_p span {
+    color: black;
+    font-weight: 900;
+}
+
+.chiled2 {
+    width: 50%;
+    position: relative;
+}
+
+.chiled2 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -130px;
+    right: 70px;
+    z-index: 0;
+}
+
+.butt {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    position: absolute;
+    left: -50px;
+    top: 100px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 900;
+    color: gray;
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.butt:hover {
+    background-color: #e7dfdf;
+}
+
+@media (max-width:600px) {
+    .box_secound {
+        height: 900px;
+        width: 100%;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+
+    .chiled2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+    }
+
+    .chiled2 img {
+       width: 100%; 
+       height: 300px;
+    }
+
+    /* .paragraph1 {
+        width: 350px;
+        height: 300px;
+    } */
+
+
+    /* .paragraph1 p {
+        position: absolute;
+        left: 10px;
+        top: 300px;
+        color: black;
+        line-height: 1.3em;
+    }
+
+    .secound_p p {
+        position: absolute;
+        bottom: 170px;
+    } */
+
+
+    .butt {
+        position: absolute;
+        left: 150px;
+        top: 260px;
+    }
+
+}

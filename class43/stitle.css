@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box1 {
+    background-color: #64a3ba;
+    width: 200px;
+    height: 200px;
+    transition:  1s linear;
+    transition-delay: 1s;
+}
+
+.box1:hover {
+    background-color: red;
+    border-radius: 50%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+}
+
+img:active {
+    transform: translate(200px) scale(2);
+    border-radius: 20px;
+    border: 2px red solid;
+}
+
+/* გექნებათ კვადრატის ფორმის, ლურჯი div ბლოკი, რომელიც გაცენტრილი იქნება. მაუსის გადატარების დროს 
+თქვენ იგი წრის ფორმის წითელ div-ად უნდა გადააქციოთ. ცვლილება მოხდეს 3 წამის განმავლობაში, 1 წამის დაყოვნებით. 
+მისი timing-function linear უნდა იყოს. */

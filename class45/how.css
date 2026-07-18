@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+    background-color: #20c789;
+    padding: 50px;
+}
+
+.dav1 {
+    width: 90%;
+    height: 300px;
+    background: rgb(29, 35, 217);
+}
+
+h2 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #c2b34f;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(480px);
+    }
+}
+
+.dav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+    background-color: rgb(29, 35, 217);
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #c2b34f;
+    animation: updown 3s infinite;
+}
+
+@keyframes updown {
+      from {
+        transform: translatey(0);
+    }
+
+    to {
+        transform: translatey(240px);
+    }
+}
+
+.dav3 {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+}
+
+.box2,
+.box3,
+.box4 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.box2 {
+    background: #ff25be;
+}
+
+.box3 {
+    background: #00aeff;
+    animation-delay: 0.2s;
+}
+
+.box4 {
+    background: #dbf836;
+    animation-delay: 0.4s;
+}
+
+.h2_3 {
+    position: absolute;
+    top: 900px;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-35px);
+    }
+}
+
+.dav4 {
+    background-color: #fff;
+    width: 90%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: up .6s infinite alternate;
+}
+
+
+@keyframes up {
+      from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(440px);
+    }
+}
