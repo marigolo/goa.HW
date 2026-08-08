@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---  პროდუქტის გვერდის კონტეინერი --- */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin-bottom: 40px;
+}
+
+.product-main {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+/* სურათების ბლოკები */
+.thumb-column {
+    width: 120px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.thumb-box img,
+.main-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: contain; */
+}
+
+.thumb-box {
+    width: 120px;
+    height: 110px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.main-image-box {
+    width: 500px;
+    height: 488px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 24px;
+}
+
+.option-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.option-title {
+    font-size: 16px;
+    color: #000000;
+}
+
+.radio-color,
+.radio-size {
+    display: none;
+}
+
+.color-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.color-circle.blue {
+    background-color: #a0b1c5;
+    background-clip: content-box;
+}
+
+.color-circle.red {
+    background-color: #db4444;
+    /* background-clip: content-box; */
+}
+
+
+.radio-color:checked+.color-circle {
+    border-color: #000000;
+}
+
+.size-box {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #000000;
+}
+
+
+/* --- ღილაკები და რაოდენობა --- */
+.action-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.quantity-box {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.qty-btn {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.qty-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.qty-btn.plus {
+    background-color: #db4444;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.qty-num {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.buy-btn {
+    background-color: #db4444;
+    color: white;
+    border: none;
+    padding: 0 48px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+.delivery-info {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.delivery-row {
+    padding: 8px 0;
+}
+
+.delivery-row strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.delivery-row p {
+    font-size: 12px;
+    color: #333333;
+}
+
+/* ---  მსგავსი პროდუქტების სვეტები --- */
+.related-section {
+    margin-top: 40px;
+}
+
+.related-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-left: 10px solid #db4444;
+    padding-left: 10px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    flex: 1;
+}
+
+.card-image {
+    height: 150px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+.card-image img {
+    max-width: 100px;
+    max-height: 200px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-price {
+    color: #db4444;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .product-main {
+        flex-direction: column;
+    }
+
+    .thumb-column {
+         width: 120px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .main-image-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-image-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .products-grid {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        width: 48%;
+    }
+}
+
+@media (max-width:768px){
+
+.container {
+    padding: 20px 15px;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Main section */
+.product-main {
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Thumbnails */
+.thumb-column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thumb-box {
+    width: 70px;
+    height: 70px;
+}
+
+.thumb-box img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+/* Main image */
+.main-image-box {
+    margin: auto;
+    width: 400px;
+    height: auto;
+}
+
+.main-image-box img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+/* Product info */
+.product-details {
+    width: 100%;
+}
+
+.product-details h1 {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 22px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Size buttons */
+.option-section {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Quantity + Buy */
+.action-row {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quantity-box,
+.buy-btn {
+    width: 100%;
+}
+
+.buy-btn {
+    padding: 14px;
+}
+
+/* Delivery */
+.delivery-info {
+    width: 100%;
+}
+
+/* Related products */
+.products-grid {
+    display:f lex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* justify-content:center; */
+}
+
+
+.card-image{
+    height: 150px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+.related-title {
+    margin-bottom: 20px;
+}
+}

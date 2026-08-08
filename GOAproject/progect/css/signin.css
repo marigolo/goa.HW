@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* marjvena formis seqcia */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 85vh;
+    background: #fff;
+}
+
+.image-section {
+    width: 58%;
+}
+
+.image-section img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    display: block;
+}
+
+.form-section {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.form-wrapper {
+    width: 370px;
+}
+
+.form-wrapper h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 15px;
+    margin-bottom: 45px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 35px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+.input-group input::placeholder {
+    color: #999;
+}
+.btn-submit {
+    width: 100%;
+    height: 52px;
+    border: none;
+    background: #db4444;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: #c73939;
+}
+
+.btn-google {
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------- */
+    /* Header responsive */
+
+@media (max-width:768px){
+
+    header {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .header_l {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav_r {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+    }
+
+    .input input {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .search {
+        position: absolute;
+        right: 12px;
+        left: auto;
+    }
+
+    .heart {
+        margin: 0;
+    }
+}
+
+
+
+/* ---------------------------------------------- */
+
+    /* main */
+
+    /* Tablet */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .image-section {
+        margin-top: 20px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 80%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .form-wrapper h2 {
+        font-size : 28px;
+        text-align : center;
+    }
+
+    .subtitle {
+        text-align : center;
+        margin-bottom : 30px;
+    }
+
+    .input-group {
+        margin-bottom : 25px;
+    }
+
+    .btn-submit,
+    .btn-google {
+        height : 48px;
+        font-size : 14px;
+    }
+
+    .login-link {
+        margin-top : 20px;
+        font-size : 14px;
+    }
+}

@@ -1,0 +1,148 @@
+/* ----------------------------------- */
+/* main */
+
+.wishlist {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.wishlist-top,
+.just-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.wishlist-top button, 
+.just-title button {
+    padding: 12px 28px;
+    background: white;
+    border: 1px solid #999;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.red-box {
+    width: 18px;
+    height: 35px;
+    background: #DB4444;
+    border-radius: 3px;
+}
+
+.products {
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.midle_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.t_r {
+    width: 34px;
+    height: 34px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t_r img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    padding: 0;
+}
+.middle_card {
+    background:#f5f5f5;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.middle_card img {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    padding: 0;
+}
+
+.card {
+    width: 270px;
+    border-radius: 6px;
+    transition: .3s;
+    background: white;
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+    /* box-shadow: 0  8px 25px rgba(0,0,0,.15); */
+}
+
+.cart-btn {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.card h4 {
+    margin: 15px 0 10px;
+    font-size: 16px;
+}
+
+.bottom_card{
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.bottom_card h4{
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #DB4444;
+    font-weight: bold;
+}
+
+.discount,
+.new {
+    position: absolute;
+    margin: 10px;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.discount {
+    background:#DB4444;
+}
+
+.new {
+    background:#00C853;
+}
+
+.card { 
+    /* position: relative; */
+}
+
+ 

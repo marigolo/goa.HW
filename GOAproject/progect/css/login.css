@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/* კონტეინერი და სტრუქტურა */
+.container {
+    display: flex;
+    min-height: calc(100vh - 120px);
+    align-items: stretch;
+}
+.image-section {
+    flex: 1.2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.image-section img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+}
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.form-wrapper {
+    width: 100%;
+}
+.form-wrapper h2 {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.subtitle {
+    /* color: #7d7d7d; */
+    margin-bottom: 30px;
+}
+
+/* ინპუტები */
+.input-group {
+    margin-bottom: 25px;
+}
+.input-group input {
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    background: transparent;
+    font-size: 16px;
+}
+
+/* ღილაკები  */
+.login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn-login {
+    background-color: #db4444;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-login:hover {
+    background-color: #bd3333;
+}
+.forgot-password {
+    color: #db4444;
+    text-decoration: none;
+    font-size: 16px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+
+/* -------------------------------------------- */
+
+    /* Header responsive */
+
+@media (max-width:768px){
+
+    header {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .header_l {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav_r {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+    }
+
+    .input input {
+        width: 100%;
+        padding-right: 40px;
+    }
+
+    .search {
+        position: absolute;
+        right: 12px;
+        left: auto;
+    }
+
+    .heart {
+        margin: 0;
+    }
+}
+
+
+
+
+/* ------------------------------- */
+
+    /* main */
+
+@media (max-width: 810px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+}

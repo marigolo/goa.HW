@@ -1,0 +1,290 @@
+/* ----------------------------------------- */
+
+    /* main */ 
+
+@media ( max-width: 968px ) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .main_list {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .sidebar .main_list li {
+        width: 100%;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .main-banner {
+        display: flex;
+        margin: auto;
+    }
+
+      .main-banner_r {
+        height: 300px;
+        display: flex;
+        align-items: center;
+      }
+
+    .main-banner_r img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .box {
+        flex-grow: 1;
+    }
+
+    .categories_bottom, .flash_bottom {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banner2_h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .dot_banner2 {
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .banner2_r img  {
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    .banner2_h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .dot_banner2 {
+        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner2_r img  {
+        transform: rotate(50deg);
+        width: 250px;
+    }
+    
+    .flash_left {
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flash_left h2 {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+
+
+}
+
+/* main box */
+
+/* 3th banner */
+
+@media (max-width: 900px) {
+
+    .banner3 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner3_l {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner3_l img {
+        width: 100%;
+    }
+
+    .banner3_r {
+        width: 100%;
+    }
+
+    .banner3_top {
+        width: 100%;
+        height: 400px;
+    }
+
+    .women_banner3 {
+        width: 100%;
+    }
+
+    .banner3_bottom {
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .banner3_bottom_left,
+    .banner3_bottom_right {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .banner3_bottom_left img,
+    .banner3_bottom_righ img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .arrival {
+        padding: 20px 10px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+
+    .banner3 {
+        gap: 15px;
+    }
+
+
+    .banner3_l {
+        height: 350px;
+    }
+
+
+    .banner3_texst_1,
+    .banner3_texst_2,
+    .banner3_texst {
+        left: 20px;
+        bottom: 20px;
+    }
+
+
+    .banner3_h3,
+    .banner3_title_h3_top1 {
+        font-size: 20px;
+    }
+
+
+    .banner3_p {
+        font-size: 13px;
+    }
+
+
+    .banner3_a {
+        font-size: 14px;
+    }
+
+
+    .banner3_top {
+        height: 300px;
+    }
+
+
+    .banner3_bottom {
+        flex-direction: column;
+    }
+
+
+    .banner3_bottom_left,
+    .banner3_bottom_right {
+        height: 250px;
+    }
+
+
+    .speaker,
+    .parfume {
+        width: 55%;
+        height: auto;
+    }
+
+}
+
+/* main responsiv  4th banner*/
+
+    /* Tablet */
+@media (max-width: 992px) {
+    .banner4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    .banner4_first {
+        width: 250px;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .banner4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 30px 20px;
+    }
+
+    .banner4_first {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .car,
+    .headset,
+    .v {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .banner4_h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .banner4_p {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .banner2_r img  {
+        width: 180px;
+    }
+}
