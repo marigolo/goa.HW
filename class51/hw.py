@@ -11,18 +11,22 @@ print(largest_number(1, 4, 5, 7))
 
 # 3)
 
-def count_even(*args):
+def count_even1(*args):
     totle = 0
     for x in args:
         if x % 2 == 0:
             totle += 1
     return totle
-print(count_even(2, 7, 10, 15, 18))
+print(count_even1(2, 7, 10, 15, 18))
+
+def count_even2(*args):
+    return sum(1 for i in args if i % 2 == 0)
+print(count_even2(2, 7, 10, 15, 18))
 
 # 4)
 
 def average(*args):
-    return sum(args) // len(args)
+    return sum(args) / len(args)
 print(average(10, 20, 30))
 
 # 5)
@@ -39,9 +43,16 @@ print(list(print_info(name='Mari', age=15, city='Tbilisi')))
 
 # 7)
 
-def print_values(**kwargs):
+def print_values1(**kwargs):
     return kwargs.values()
-print(list(print_values(name='Mari', age=15, city='Tbilisi')))
+print(list(print_values1(name='Mari', age=15, city='Tbilisi')))
+
+def print_values(**kwargs):
+    for value in kwargs.values():
+        print(value)
+
+print_values(name='Mari', age=15, city='Tbilisi')
+
 
 # 8)
 
@@ -51,9 +62,14 @@ print(count_keys(name='Mari', age=15, city='Tbilisi'))
 
 # 9)
 
-def person_info(name, age, *args, **kwargs):
-    return name, age, args, kwargs
-print(person_info('Mari', 15, 'Student', 'Georgia', hobby='Coding', city='Tbilisi'))
+def my_function(name, age, *args, **kwargs):
+    print(name)
+    print(age)
+    print(args)
+    print(kwargs)
+
+
+my_function("Mari", 15, "Python", "HTML", city="Tbilisi", hobby="coding")
 # 'Mari' არის პირველი რეგულარული არგუმენტი ინახება name-ში.
 # 15  არის მეორე რეგულარული არგუმენტი ინახება age-ში.
 # 'Student', 'Georgia' არიან ზედმეტი positional არგუმენტები ინახება *args-ში (tuple).
