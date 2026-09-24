@@ -24,7 +24,7 @@ console.log(removedNumber);
 // 5)
 
 let colors = ["წითელი", "მწვანე", "ლურჯი", "ყვითელი", "იასამნისფერი"];
-console.log(colors.at(0), colors.at(-1));
+console.log(colors.at(0), colors.at(colors.length -1));
 
 
 // 6)
@@ -67,7 +67,7 @@ console.log(randomMovies);
 // 11)
 
 let scores = [50, 65, 78, 92, 45, 88, 99];
-let lastThree = scores.slice(-3);
+let lastThree = scores.slice(4, 7);
 console.log(lastThree);
 
 
@@ -81,7 +81,7 @@ searchHistory.push('youtube.com');
 searchHistory.pop();
 searchHistory.push('stackoverflow.com');
 console.log(searchHistory.length);
-console.log(searchHistory.at(-1));
+console.log(searchHistory.at(searchHistory.length -1));
 
 
 // 13)

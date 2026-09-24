@@ -1,4 +1,3 @@
-
 # 3)
 
 class Employees:
@@ -12,6 +11,11 @@ class Managers(Employees):
         super().__init__(name, salary)
         self.department = department
         
+manager = Managers("Nika", 3000, "IT")
+
+print(manager.name)
+print(manager.salary)
+print(manager.department)
 
 # 4)
 
@@ -25,7 +29,12 @@ class Admin(User):
         super().__init__(username, email)
         self.role = role
     
-        
+admin = Admin("mari", "mari@gmail.com", "Administrator")
+
+print(admin.username)
+print(admin.email)
+print(admin.role)
+   
 # 5)
 
 class Book:
@@ -37,8 +46,16 @@ class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
+ 
         
         
+book = EBook("Harry Potter", "J.K. Rowling", 25)
+
+print(book.title)
+print(book.author)
+print(book.file_size)
+
+
 # 6)
 
 class Employee:
@@ -55,10 +72,10 @@ class Manager(Employee):
         super().__init__(name, salary)
 
     def bonus_salary(self):
-        self.salary = self.salary * 1.2
-        print(self.salary)
+        s = self.salary = self.salary * 0.2
+        print(s)
         
-
+# შექმენით მშობელი კლასი Vehicle. მიეცით მას თვისებები: brand, year, color, horsePower. მშობელ კლასში დაამატეთ drive() მეთოდი, რომელიც დაბეჭდავს '{color} {brand} is going'. ასევე შექმენით stop() მეთოდი, რომელიც დაბეჭდავს '{color} {brand} is stopping'. შექმენით child კლასები: Car, Motorcycle, Bike. გადაეცით შვილ კლასებს მშობლის თვისებები და მეთოდები. ამასთანავე თქვენი ფანტაზიით მოიფიქრეთ და დაამატეთ სხვადასხვა მეთოდები შვილ კლასებში.
 
 # 7)
 
@@ -70,35 +87,45 @@ class Vehicle:
         self.horsePower = horsePower
 
     def drive(self):
-        print(f'{self.color} {self.brand} is going')
+        print(f"{self.color} {self.brand} is going")
 
     def stop(self):
-        print(f'{self.color} {self.brand} is stopping')
+        print(f"{self.color} {self.brand} is stopping")
 
 
 class Car(Vehicle):
+    def __init__(self, brand, year, color, horsePower):
+        super().__init__(brand, year, color, horsePower)
     def open_trunk(self):
-        print(f'{self.brand} trunk is open')
-
-    def honk(self):
-        print(f'{self.brand} is honking')
+        print(f"{self.brand} trunk is open")
 
 
 class Motorcycle(Vehicle):
+    def __init__(self, brand, year, color, horsePower):
+        super().__init__(brand, year, color, horsePower)
     def wheelie(self):
-        print(f'{self.brand} is doing a wheelie')
-
-    def start_engine(self):
-        print(f'{self.brand} motorcycle engine started')
+        print(f"{self.brand} is doing a wheelie")
 
 
 class Bike(Vehicle):
+    def __init__(self, brand, year, color, horsePower):
+        super().__init__(brand, year, color, horsePower)
     def ring_bell(self):
-        print(f'{self.brand} bell is ringing')
+        print(f"{self.brand} bell is ringing")
 
-    def pedal(self):
-        print(f'{self.brand} is being pedaled')
 
+car = Car("BMW", 2022, "Black", 250)
+motorcycle = Motorcycle("Yamaha", 2023, "Blue", 120)
+bike = Bike("Trek", 2024, "Red", 0)
+
+car.drive()
+car.open_trunk()
+
+motorcycle.drive()
+motorcycle.wheelie()
+
+bike.drive()
+bike.ring_bell()
 
 '''
 2) 
