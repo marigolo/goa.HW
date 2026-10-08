@@ -35,10 +35,10 @@ for(let z = 40; z >= 20; z-=5){
 
 // 7)
 
-let name = "Mari";
+let names = "Mari";
 
-for (let i = 0; i < name.length; i++) {
-    console.log(i, name[i]);
+for (let i = 0; i < names.length; i++) {
+    console.log(i, names[i]);
 }
 
 
