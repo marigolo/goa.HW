@@ -98,32 +98,51 @@ print(bank.get_account_name())
 
 # balance — name mangling-ით
 # print(bank._Bank__balance)
+# instansn._classname__property
 
 
 # 9) 
 
-class Book:
+class Books:
     def __init__(self, author, bookName, pageAmount):
+        self.bookName = bookName
         self._author = author
         self.__pageAmount = pageAmount
-
+    
+    def get_author(self):
+        return self._author
+    
     def get_pageAmount(self):
         return self.__pageAmount
-
-    def __display_pages(self):
-        return self.__pageAmount
-
-
-book = Book("J.K. Rowling", "Harry Potter", 300)
-
-# author — კლასის გარედან, მეთოდის გარეშე
-print(book._author)
-
-# pageAmount — მეთოდის საშუალებით
+    
+book = Books("J.K. Rowling", "Harry Potter", 300)
+print(book.get_author())
 print(book.get_pageAmount())
 
-# pageAmount — name mangling-ით
+# print(book._Books__pageAmount)
+
+# class Book:
+#     def __init__(self, author, bookName, pageAmount):
+#         self._author = author
+#         self.__pageAmount = pageAmount
+
+#     def get_pageAmount(self):
+#         return self.__pageAmount
+
+#     def __display_pages(self):
+#         return self.__pageAmount
+
+
+# book = Book("J.K. Rowling", "Harry Potter", 300)
+
+# # author — კლასის გარედან, მეთოდის გარეშე
+# print(book._author)
+
+# # pageAmount — მეთოდის საშუალებით
+# print(book.get_pageAmount())
+
+# # pageAmount — name mangling-ით
 # print(book._Book__pageAmount)
 
-# display_pages — Private მეთოდის name mangling-ით
+# # display_pages — Private მეთოდის name mangling-ით
 # print(book._Book__display_pages())

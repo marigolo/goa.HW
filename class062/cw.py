@@ -20,6 +20,23 @@ def make_sound(self):
         return "mew"
 '''
 
+class Animal:
+    def __init__(self, name, breed, color):
+        self.name = name
+        self.breed = breed
+        self.color = color
+
+class pray:
+    def __init__(self, age):
+            self.age = age
+
+class Cat(Animal, pray):
+    def __init__(self, name, breed, color):
+        super().__init__(name, breed, color)
+        
+# class Kitten(Cat):
+#     def __init__(self, name, breed, color):
+#         super().__init__(name, breed, color)
 
 # class Animal:
 #     def __init__(self, name, breed, color):

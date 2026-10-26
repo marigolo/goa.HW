@@ -1,0 +1,16 @@
+.pearent {
+    background-color: #950707;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.child {
+    background-color: #b37474;
+    height: 100px;
+    width: 100px;
+    position: sticky;
+    bottom: 100px;
+    left: 200px;
+}
