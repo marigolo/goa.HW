@@ -25,6 +25,8 @@ const even = number.filter(evenNum => {return evenNum % 2 == 0});
 
 console.log(even);
 
+// filter() არ ცვლის ორიგინალ მასივს.
+// filter() აბრუნებს ახალ მასივს, რომელშიც მხოლოდ პირობის
 
 // 3) 
 
@@ -32,6 +34,10 @@ const names = ['mariami', 'lika', 'sally', 'anamaria', 'anna'];
 const startsWith = names.map(name => {return name[0].toUpperCase();});
 
 console.log(startsWith);
+
+// map() აბრუნებს ახალ მასივს და არ ცვლის ორიგინალ მასივს.
+// name[0] იღებს სახელის პირველ ასოს.
+// toUpperCase() პირველ ასოს დიდ ასოდ აქცევს.
 
 // 4) 
 
@@ -63,13 +69,24 @@ const chakeIndex = indexs.findIndex(i => {return i > 3;});
 console.log(chakeIndex);
 
 
-// 8) numbers მასივი გაფილტრეთ ისეთი რიცვებისგან, რომლებიც მეტია 5 - ზე, შემდეგ გაატარეთ findIndex მეთოდში და გამოიტანეთ იმ რიცხვის index, რომელიც 3-ის ნამრავლია.
+// 8)
 
-const numberს = [10, 12, 13, 15, 23, 12, 33, 66, 0];
-const evenს = numberს.filter(evenNum => {return evenNum % 2 == 0;});
+const numbers2 = [10, 12, 13, 15, 23, 12, 33, 66, 0];
 
-console.log(evenს);
+const filteredNumbers = numbers2.filter(num => {
+    return num > 5;
+});
 
-// filter() არ ცვლის ორიგინალ მასივს.
-// ის აბრუნებს ახალ მასივს, რომელშიც მხოლოდ პირობის
-// დამაკმაყოფილებელი ელემენტებია.
+const index = filteredNumbers.findIndex(num => {
+    return num % 3 === 0;
+});
+
+console.log(index);
+
+// filter() ტოვებს მხოლოდ 5-ზე მეტ რიცხვებს.
+// findIndex() პოულობს პირველი ისეთი რიცხვის ინდექსს,
+// რომელიც 3-ზე უნაშთოდ იყოფა.
+// ინდექსების ათვლა იწყება 0-დან.
+// გაფილტრული მასივია [10, 12, 13, 15, 23, 12, 33, 66].
+// პირველი 3-ის ჯერადი რიცხვია 12, რომლის ინდექსია 1.
+// ამიტომ console-ში დაიბეჭდება 1.

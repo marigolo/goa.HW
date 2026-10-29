@@ -178,11 +178,20 @@ n = 5
 #     print(' ' * (n - i) + '*' *(2 * i - 1))
 
 
-def show(**kwargs):
-    print(kwargs)
+# def show(**kwargs):
+#     print(kwargs)
     
-show(
-    name = 'Masha',
-    age = 12, 
-    tear = True
-)
+# show(
+#     name = 'Masha',
+#     age = 12, 
+#     tear = True
+# )
+
+
+
+x = int(input('Enter your age: '))
+
+if x % 2 == 0:
+    print(x)
+else:
+    print(x + 1)
