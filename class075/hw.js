@@ -14,29 +14,18 @@ console.log(userAge(2));
 // 3)  of — მასივის ელემენტებს სათითაოდ იღებს.
 
 function countLetters(txt) {
-    let count = 0;
-    for (let letter of txt) {
-        if (letter.toLowerCase() !== letter.toUpperCase()) {
-            count++;
-        }
-    }
-  
-    return count;
+    return txt.length
 }
 console.log(countLetters('Hello'));
 
 // 4) 
 
-function sum(arr){
-    let total = 0;
-    for (let i = 0; i < arr.length; i++) {
-        total += arr[i];
-    }
-
-    return total;
+function sums(arr) {
+    return arr.reduce((total, num) => total + num, 0);
 }
 
-console.log(sum([1, 2, 3, 4, 5]))
+
+console.log(sums([1, 2, 3, 4, 5]))
 
 // 5) 
 
@@ -48,11 +37,11 @@ console.log(square(3))
 
 // 6) 
 
-function namSquare(a = 1, b = 2, c = 3){
+function mixOfPower(a = 1, b = 2, c = 3){
     return a**b*c
 }
 
-console.log(namSquare(2, 2, 1))
+console.log(mixOfPower(2, 2, 1))
 
 // 7)
  
