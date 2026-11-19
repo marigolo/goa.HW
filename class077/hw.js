@@ -1,6 +1,5 @@
-// 2)
-
-let even = function isEven(num) {
+// 2
+let isEven = function (num) {
   if (num % 2 == 0) {
     return true;
   } else {
@@ -8,26 +7,24 @@ let even = function isEven(num) {
   }
 };
 
-console.log(even(20));
-console.log(even(23));
+console.log(isEven(20));
+console.log(isEven(23));
 
-// 3)
-
-let max = function findMax(a, b) {
+// 3
+let findMax = function (a, b) {
   if (a > b) {
     return a;
   } else if (a < b) {
     return b;
   } else {
-    return 'ტოლებია';
+    return a;
   }
 };
 
-console.log(max(2, 3));
+console.log(findMax(2, 3));
 
-// 4)
-
-function reverseString(str) {
+// 4
+let reverseString = function (str) {
   let result = '';
 
   for (let i = str.length - 1; i >= 0; i--) {
@@ -35,13 +32,12 @@ function reverseString(str) {
   }
 
   return result;
-}
+};
 
 console.log(reverseString('Hello'));
 
-// 5)
-
-let Vowels = function countVowels(str) {
+// 5
+let countVowels = function (str) {
   let count = 0;
 
   for (let i = 0; i < str.length; i++) {
@@ -61,43 +57,57 @@ let Vowels = function countVowels(str) {
   return count;
 };
 
-console.log(Vowels('Hi i am learning JS'));
+console.log(countVowels('Hi i am learning JS' ));
 
-// 6)
+// 6
+let getEvenNumbers = function (arr) {
+  let evenNumbers = arr.filter(function (num) {
+    return num % 2 == 0;
+  });
 
-let enen1 = function getEvenNumbers(arr) {
-  let evenNumbers = arr.filter((num) => num % 2 == 0);
   return evenNumbers;
 };
 
-console.log(enen1([1, 2, 4, 5, 6, 6, 7]));
+console.log(getEvenNumbers([1, 2, 4, 5, 6, 6, 7]));
 
-// 7)
-
-let getFactorial = function factorial(n) {
-  let ress = 1;
+// 7
+let factorial = function (n) {
+  let result = 1;
 
   for (let i = 1; i <= n; i++) {
-    ress *= i;
+    result *= i;
   }
 
-  return ress;
+  return result;
 };
 
-console.log(getFactorial(5));
+console.log(factorial(5));
 
-// 8)
+// 8
 
-let findPalindrome = function isPalindrome(str) {
+let isPalindrome = function (str) {
   return str === str.split('').reverse().join('');
 };
 
-console.log(findPalindrome('hello'));
-console.log(findPalindrome('LEVEL'));
+// let isPalindrome = function(str) {
+//     let reversed = '';
 
-// 9)
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reversed += str[i];
+//     }
 
-let longest = function findLongestWord(sentence) {
+//     if (str === reversed) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+console.log(isPalindrome('hello'));
+console.log(isPalindrome('LEVEL'));
+
+// 9
+let findLongestWord = function (sentence) {
   let max = '';
   let word = '';
 
@@ -116,30 +126,29 @@ let longest = function findLongestWord(sentence) {
   return max;
 };
 
-console.log(longest('I love programming'));
+console.log(findLongestWord('I love programming'));
 
-// 10)
-
-function getUniqueValues(arr) {
+// 10
+let getUniqueValues = function (arr) {
   return [...new Set(arr)];
-}
+};
 
 console.log(getUniqueValues([1, 2, 2, 3, 4, 4]));
 
-// 11)
-
-let capitalize = function capitalizeWords(sentence) {
+// 11
+let capitalizeWords = function (sentence) {
   return sentence
     .split(' ')
-    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .map(function (word) {
+      return word[0].toUpperCase() + word.slice(1);
+    })
     .join(' ');
 };
 
-console.log(capitalize('hello world'));
+console.log(capitalizeWords('hello world'));
 
-// 12)
-
-function areAnagrams(str1, str2) {
+// 12
+let areAnagrams = function (str1, str2) {
   str1 = str1.toLowerCase();
   str2 = str2.toLowerCase();
 
@@ -167,6 +176,6 @@ function areAnagrams(str1, str2) {
   }
 
   return true;
-}
+};
 
 console.log(areAnagrams('listen', 'silent'));
